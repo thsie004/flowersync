@@ -12,9 +12,10 @@ body {
     background: radial-gradient(circle, #6495ed, #739fee, #83aaf0, #92b4f2, #a2bff4, 
                                 #b1caf6, #c1d4f7); 
     position: relative;
-    height: 100vh;
+    height: 100vmin;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .flower {
@@ -28,9 +29,13 @@ body {
     
     /*Center the flower*/
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+    animation: spin linear 30s infinite;
 }
 
 .parts {
@@ -65,6 +70,14 @@ body {
 .flowerParts{
     height: 100%;
     width: auto;
+}
+
+
+
+/*Hover events*/
+.pistilSvg:Hover{
+    transition: all .2s ease-in-out;
+    transform: scale(1.2);
 }
 
 
@@ -140,8 +153,10 @@ body {
 
 
 
-
-
+/*Animations*/
+@keyframes spin {
+    100%    {transform: rotate(1turn); }
+}
 
 
 
