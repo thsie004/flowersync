@@ -1,0 +1,153 @@
+body {
+    background: cornflowerblue;
+    /* For Safari 5.1 to 6.0 */
+    background: -webkit-radial-gradient(circle, #6495ed, #739fee, #83aaf0, #92b4f2, 
+                                        #a2bff4, #b1caf6, #c1d4f7);
+    /* For Opera 11.6 to 12.0 */
+    background: -o-radial-gradient(circle, #6495ed, #739fee, #83aaf0, #92b4f2, #a2bff4, 
+                                   #b1caf6, #c1d4f7);
+    /* For Fx 3.6 to 15 */
+    background: -moz-radial-gradient(circle, #6495ed, #739fee, #83aaf0, #92b4f2, #a2bff4, 
+                                     #b1caf6, #c1d4f7);
+    background: radial-gradient(circle, #6495ed, #739fee, #83aaf0, #92b4f2, #a2bff4, 
+                                #b1caf6, #c1d4f7); 
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.flower {
+    /*Want the flower to be inside a square div*/
+    height: 30vmin;
+    width: 30vmin;
+    max-height: 300px;
+    max-width: 300px;
+    min-height: 200px;
+    min-width: 200px;
+    
+    /*Center the flower*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.parts {
+    position: absolute;
+}
+
+
+
+/*Ensures the dimension of div's containing a small petal*/
+.smallPetal{
+    height: 36%;
+    width: 27%;
+}
+
+/*Ensures the dimension of div's containing a large petal*/
+.largePetal{
+    height: 50%;
+    width: 36%;
+}
+
+/*Ensures the dimension of the div containing pistil and centers it*/
+.pistil {
+    height: 28%;
+    width: 28%;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Ensures each svg scales properly to fit their div container*/
+.flowerParts{
+    height: 100%;
+    width: auto;
+}
+
+
+
+/*Positioning of each petal*/
+.smallPetal1 {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    
+    top: 33%;
+    right: 13%;
+}
+
+.smallPetal2 {
+    top: 7%;
+    left: 35%;
+}
+
+.smallPetal3 {
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+    
+    top: 33%;
+    left: 11%;
+}
+
+.smallPetal4 {
+    -ms-transform: rotate(-180deg); /* IE 9 */
+    -webkit-transform: rotate(-180deg); /* Chrome, Safari, Opera */
+    transform: rotate(-180deg);
+    
+    bottom: 7%;
+    left: 35%;
+}
+
+.largePetal1 {
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    
+    top: 3%;
+    right: 10%;
+}
+
+.largePetal2 {
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+    
+    top: 3%;
+    left: 10%;
+}
+
+.largePetal3 {
+    -ms-transform: rotate(-135deg); /* IE 9 */
+    -webkit-transform: rotate(-135deg); /* Chrome, Safari, Opera */
+    transform: rotate(-135deg);
+    
+    bottom: 3%;
+    left: 10%;
+}
+
+.largePetal4 {
+    -ms-transform: rotate(135deg); /* IE 9 */
+    -webkit-transform: rotate(135deg); /* Chrome, Safari, Opera */
+    transform: rotate(135deg);
+    
+    bottom: 3%;
+    right: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
